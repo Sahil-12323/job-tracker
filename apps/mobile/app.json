@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "name": "JobTrackr AI",
+    "slug": "jobtrackr-ai",
+    "scheme": "jobtrackrai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "platforms": ["ios", "android"],
+    "plugins": ["expo-notifications"],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jobtrackr.ai"
+    },
+    "android": {
+      "package": "com.jobtrackr.ai",
+      "intentFilters": [
+        {
+          "action": "SEND",
+          "data": [{ "mimeType": "text/*" }],
+          "category": ["DEFAULT"]
+        }
+      ]
+    }
+  }
+}
